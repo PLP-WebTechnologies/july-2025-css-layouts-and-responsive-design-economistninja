@@ -1,0 +1,150 @@
+h1, p{ 
+    display: inline;
+}
+
+a, span, img {
+    display: block
+}
+
+.container {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;   
+    width: 100%;
+    height: 100%;
+    background-color: olive;
+    border: 1px solid black;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: auto;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background-color: red;
+}
+
+.flex-item {
+    flex: 1 1 33%;
+    background-color: lightblue;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+#p-one {
+    display: none;
+}
+
+img {
+    float: right;
+}
+
+/* Responsive Website 
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Web Design</title>
+        <style>
+            body {
+                font-size: 18px;
+            }
+
+            @media (max-width: 600px) {
+                body {
+                    font-size: 16px;
+                    background-color: greenyellow;
+                    color: white;
+                }
+            }
+
+            .container {
+                width: 100%;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: purple;
+                border: 2px solid black;
+                box-sizing: border-box;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+                
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Responsive Web Design Example</h1>
+            <p>This is a simple example of a responsive web design layout using fluid layout.</p>
+            <img src="https://images.pexels.com/photos/33483166/pexels-photo-33483166.jpeg" alt ="Married Woman">
+    </body>
+</html>
+
+/* Grid 
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CSS Layouts and Responsive Web Design</title>
+        <style>
+            .grid-layout {
+                display: grid;
+                grid-template-areas: 
+                    "header header header"
+                    "nav main aside"
+                    "footer footer footer";
+                grid-template-columns: 1fr 2fr 1fr;
+                grid-template-rows: auto 1fr auto;
+                height: 100vh;
+            }
+
+            header {
+                grid-area: header;
+                background-color: lightblue;
+                color: white;
+                text-align: center;
+                padding: 1em;
+            }
+
+            nav {
+                grid-area: nav;
+                background-color: lightgreen;
+                padding: 1em;
+            }
+
+            main {
+                grid-area: main;
+                background-color: lightcoral;
+                padding: 1em;
+            }
+
+            aside {
+                grid-area: aside;
+                background-color: lime;
+                padding: 1em;
+            }
+
+            footer {
+                grid-area: footer;
+                background-color: lightseagreen;
+                text-align: center;
+                padding: 1em;
+            }
+            
+        </style>
+    </head>
+    <body>
+    <div class="grid-layout">
+        <header>Header</header>
+        <nav>Navigation</nav>
+        <main>Main Content</main>
+        <aside>Sidebar</aside>
+        <footer>Footer</footer>
+    </div>
+    </body>
+</html>
